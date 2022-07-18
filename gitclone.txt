@@ -1,0 +1,15 @@
+Git 的 Clone 功能：从 github 上直接粘贴一个项目到当前路径。
+
+第一步：按照教程，搜索 dkhamsing 的 list of open-source iPhone app。
+        在以下地址找到：https://github.com/dkhamsing/open-source-ios-apps
+
+第二步：在该页面，搜索 swift 开发的 Game： 2048
+
+第三步：点开 绿色方块 Code，在首页 Clone 找到结尾为 .git 的链接。
+
+第四步：在 Terminal 中插入结尾为 .git 的链接，$ git clone https://github.com/dkhamsing/open-source-ios-apps.git
+
+第五步：打开扩展名为 .xcodeproj 的工程文件，用 Xcode 试运行！
+    // $ cd + project name + / 可以进入 project folder 进行查看!
+    // 进入 project folder 后，
+        // $ git log 可以查看这个 project 的 commit 历史！ 
