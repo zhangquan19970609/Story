@@ -13,3 +13,46 @@ Git 的 Clone 功能：从 github 上直接粘贴一个项目到当前路径。
     // $ cd + project name + / 可以进入 project folder 进行查看!
     // 进入 project folder 后，
         // $ git log 可以查看这个 project 的 commit 历史！ 
+
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+
+Git 的 branching 功能：利用 branching 功能，同时开发多个支线版本，
+                      或在稍后将某版本与其他版本合并 Merge 起来。
+
+以 09 GitClone, Branching and Merging 为例：
+
+第一步：
+    $ git init 
+    $ git add .
+    $ git commit -m "initial commit"
+    $ git log
+    $ git status 
+    $ git branch
+
+    确认目前 add & commit 的文件有哪些、
+    上传在哪个 branch (默认情况下应为 HEAD -> master)
+
+第二步：
+    $ git branch alien-plot
+        // 添加一个 branch 名为 alien-plot
+
+    $ git branch
+        // 返回内容为：
+        alien-plot
+        * master
+    
+    现在已经创建了 新的 branch，将现在的 workplace 调整到新 branch 的方法：
+    $ git checkout alien-plot
+        // 返回内容为：
+        Switched to branch 'alien-plot'
+
+    调整到新的 branch 之后，
+    对 chapter1、chapter2、chapter3 改成乱码并保存。
+    保存文件后，将新的修改 commit 到 git：
+        $ git add .
+        $ git commit -m "alien modify"
+
+
+    
+
